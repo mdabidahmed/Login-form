@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+    />
+    <!-- Bootstrap core CSS -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <!-- Material Design Bootstrap -->
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/css/mdb.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="container mt-5" style="width: 33%;">
+      <h1 class="display-4 text-center">Form Validation</h1>
+      <!-- Default form register -->
+      <form class="text-center border border-light p-5" action="#!">
+        <p class="h4 mb-4">Sign up</p>
+
+        <!-- First name -->
+        <input
+          type="text"
+          id="defaultRegisterFormFirstName"
+          class="form-control namefull"
+          placeholder="Full name"
+        />
+        <div
+          class="alert alert-danger p-0 mb-0 nameError"
+          style="opacity: 0;"
+          role="alert"
+        >
+          Alphabets only, minimum length 3, max length 16
+        </div>
+
+        <!-- E-mail -->
+        <input
+          type="email"
+          id="defaultRegisterFormEmail"
+          class="form-control  emailfull"
+          placeholder="E-mail"
+        />
+        <div
+          class="alert alert-danger p-0 mb-0 emailError"
+          style="opacity: 0;"
+          role="alert"
+        >
+          Invalid Email
+        </div>
+
+        <!-- Password -->
+        <input
+          type="password"
+          id="defaultRegisterFormPassword"
+          class="form-control passFull"
+          placeholder="Password (At least 8 characters, one number and one uppercase)"
+          aria-describedby="defaultRegisterFormPasswordHelpBlock"
+        />
+        <div
+          class="alert alert-danger p-0 passError"
+          style="opacity: 0;"
+          role="alert"
+        >
+          Invalid Password
+        </div>
+        <button
+          class="btn btn-info mb-4 btn-block button1"
+          type="submit"
+          style="margin-top: 30px;"
+          data-toggle="modal"
+          data-target="#exampleModalCenter"
+          disabled
+        >
+          Sign in
+        </button>
+
+        <!-- Social register -->
+        <p>or sign up with:</p>
+
+        <a href="#" class="mx-2" role="button"
+          ><i class="fab fa-facebook-f light-blue-text"></i
+        ></a>
+        <a href="#" class="mx-2" role="button"
+          ><i class="fab fa-twitter light-blue-text"></i
+        ></a>
+        <a href="#" class="mx-2" role="button"
+          ><i class="fab fa-linkedin-in light-blue-text"></i
+        ></a>
+        <a href="#" class="mx-2" role="button"
+          ><i class="fab fa-github light-blue-text"></i
+        ></a>
+
+        <hr />
+
+        <!-- Terms of service -->
+        <p>
+          By clicking <em>Sign up</em> you agree to our
+          <a href="" target="_blank">terms of service</a>
+        </p>
+      </form>
+
+      <!-- Default form register -->
+    </div>
+    <!-- Modal -->
+    <div
+      class="modal fade"
+      id="exampleModalCenter"
+      tabindex="-11"
+      role="dialog"
+      aria-labelledby="exampleModalCenterTitle"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLongTitle">Success</h5>
+            <button
+              type="button"
+              class="close"
+              data-dismiss="modal"
+              aria-label="Close"
+            >
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            Sign up Successfull
+          </div>
+          <!-- <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-dismiss="modal"
+            >
+              Close
+            </button>
+            <button type="button" class="btn btn-primary">Save changes</button>
+          </div> -->
+        </div>
+      </div>
+    </div>
+
+    <!-- JQuery -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
+    ></script>
+    <!-- Bootstrap tooltips -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.4/umd/popper.min.js"
+    ></script>
+    <!-- Bootstrap core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"
+    ></script>
+    <!-- MDB core JavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.10.1/js/mdb.min.js"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
